@@ -70,6 +70,18 @@ import racoilGearEp140Gl3_20L from '@/assets/products/racoil-gear-ep140-gl3-20l.
 // RACOIL AXLE OIL
 import racoilAxleOil_10L from '@/assets/products/racoil-axle-oil-10l.png';
 import racoilAxleOil_20L from '@/assets/products/racoil-axle-oil-20l.png';
+// MP BROWN Grease
+import mpBrown_05Kg from '@/assets/products/mp-brown-0.5kg.png';
+import mpBrown_1Kg from '@/assets/products/mp-brown-1kg.png';
+import mpBrown_10Kg from '@/assets/products/mp-brown-10kg.png';
+import mpBrown_18Kg from '@/assets/products/mp-brown-18kg.png';
+import mpBrown_180Kg from '@/assets/products/mp-brown-180kg.png';
+// Chassic Grease
+import chassicGrease_05Kg from '@/assets/products/chassic-grease-0.5kg.png';
+import chassicGrease_1Kg from '@/assets/products/chassic-grease-1kg.png';
+import chassicGrease_10Kg from '@/assets/products/chassic-grease-10kg.png';
+import chassicGrease_18Kg from '@/assets/products/chassic-grease-18kg.png';
+import chassicGrease_180Kg from '@/assets/products/chassic-grease-180kg.png';
 export interface ProductSize {
   size: string;
   price: number;
@@ -618,14 +630,11 @@ export const greases: Category = {
       name: 'MP BROWN',
       description: 'General-purpose grease offering good lubrication and protection.',
       sizes: [
-        { size: '0.5', price: 0 },
-        { size: '1', price: 0 },
-        { size: '2', price: 0 },
-        { size: '3', price: 0 },
-        { size: '5', price: 0 },
-        { size: '10', price: 0 },
-        { size: '18', price: 0 },
-        { size: '180', price: 0 }
+        { size: '0.5', price: 313, image: mpBrown_05Kg },
+        { size: '1', price: 551, image: mpBrown_1Kg },
+        { size: '10', price: 5025, image: mpBrown_10Kg },
+        { size: '18', price: 8824, image: mpBrown_18Kg },
+        { size: '180', price: 68400, image: mpBrown_180Kg }
       ],
       sizeUnit: 'kg'
     },
@@ -662,18 +671,15 @@ export const greases: Category = {
       sizeUnit: 'kg'
     },
     {
-      id: 'chessic-grease',
-      name: 'Chessic Grease',
+      id: 'chassic-grease',
+      name: 'Chassic Grease',
       description: 'Durable grease designed for chassis lubrication and protection.',
       sizes: [
-        { size: '0.5', price: 0 },
-        { size: '1', price: 0 },
-        { size: '2', price: 0 },
-        { size: '3', price: 0 },
-        { size: '5', price: 0 },
-        { size: '10', price: 0 },
-        { size: '18', price: 0 },
-        { size: '180', price: 0 }
+        { size: '0.5', price: 263, image: chassicGrease_05Kg },
+        { size: '1', price: 453, image: chassicGrease_1Kg },
+        { size: '10', price: 4044, image: chassicGrease_10Kg },
+        { size: '18', price: 7059, image: chassicGrease_18Kg },
+        { size: '180', price: 50760, image: chassicGrease_180Kg }
       ],
       sizeUnit: 'kg'
     },
