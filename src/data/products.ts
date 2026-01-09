@@ -126,6 +126,15 @@ import racoilGear85w140Gl5_10L from '@/assets/products/racoil-gear-85w140-gl5-10
 import racoilGear85w140Gl5_20L from '@/assets/products/racoil-gear-85w140-gl5-20l.png';
 // Industrial Oils 210L
 import racoilIndustrial210L from '@/assets/products/racoil-industrial-210l.png';
+// RACOIL TRANSMISSION/GEAR OIL 80W-90 GL-5
+import racoilGear80w90Gl5_1L from '@/assets/products/racoil-gear-80w90-gl5-1l.png';
+import racoilGear80w90Gl5_8L from '@/assets/products/racoil-gear-80w90-gl5-8l.png';
+import racoilGear80w90Gl5_10L from '@/assets/products/racoil-gear-80w90-gl5-10l.png';
+import racoilGear80w90Gl5_20L from '@/assets/products/racoil-gear-80w90-gl5-20l.png';
+// RACOIL TRANSMISSION/GEAR OIL 80W-90 GL-4
+import racoilGear80w90Gl4_1L from '@/assets/products/racoil-gear-80w90-gl4-1l.png';
+import racoilGear80w90Gl4_10L from '@/assets/products/racoil-gear-80w90-gl4-10l.png';
+import racoilGear80w90Gl4_20L from '@/assets/products/racoil-gear-80w90-gl4-20l.png';
 export interface ProductSize {
   size: string;
   price: number;
@@ -438,11 +447,9 @@ export const automotiveOils: Category = {
           name: 'RACOIL TRANSMISSION/GEAR OIL 80W-90 GL-4',
           description: 'Quality transmission oil providing smooth gear shifting and wear protection.',
           sizes: [
-            { size: '1', price: 0 },
-            { size: '4', price: 0 },
-            { size: '8', price: 0 },
-            { size: '10', price: 0 },
-            { size: '20', price: 0 }
+            { size: '1', price: 711, image: racoilGear80w90Gl4_1L },
+            { size: '10', price: 6620, image: racoilGear80w90Gl4_10L },
+            { size: '20', price: 12740, image: racoilGear80w90Gl4_20L }
           ],
           sizeUnit: 'liter'
         },
@@ -451,11 +458,10 @@ export const automotiveOils: Category = {
           name: 'RACOIL TRANSMISSION/GEAR OIL 80W-90 GL-5',
           description: 'High-performance gear oil designed for heavy-duty automotive applications.',
           sizes: [
-            { size: '1', price: 0 },
-            { size: '4', price: 0 },
-            { size: '8', price: 0 },
-            { size: '10', price: 0 },
-            { size: '20', price: 0 }
+            { size: '1', price: 735, image: racoilGear80w90Gl5_1L },
+            { size: '8', price: 5592, image: racoilGear80w90Gl5_8L },
+            { size: '10', price: 6863, image: racoilGear80w90Gl5_10L },
+            { size: '20', price: 13235, image: racoilGear80w90Gl5_20L }
           ],
           sizeUnit: 'liter'
         },
