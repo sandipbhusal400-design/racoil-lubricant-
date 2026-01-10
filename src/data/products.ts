@@ -208,16 +208,6 @@ export const automotiveOils: Category = {
           sizeUnit: 'liter'
         },
         {
-          id: 'racoil-20w40-cf4',
-          name: 'RACOIL 20W-40 CF/4',
-          description: 'Robust engine oil suitable for diesel engines, providing good engine protection, cleanliness, and stable performance during long operating hours.',
-          sizes: [
-            { size: '1', price: 0 },
-            { size: '3', price: 0 }
-          ],
-          sizeUnit: 'liter'
-        },
-        {
           id: 'racoil-10w40-sm',
           name: 'RACOIL 10W-40 SM',
           description: 'Premium multigrade engine oil offering excellent cold start performance, reduced engine wear, and smooth operation for petrol engines.',
@@ -398,16 +388,6 @@ export const automotiveOils: Category = {
           sizeUnit: 'liter'
         },
         {
-          id: 'racoil-axle-oil',
-          name: 'RACOIL AXLE OIL',
-          description: 'Extreme Pressure Transmission Oil designed for rear axles, providing excellent frictional properties and protection against rust, oxidation, and wear.',
-          sizes: [
-            { size: '10', price: 8400, image: racoilAxleOil_10L },
-            { size: '20', price: 16400, image: racoilAxleOil_20L }
-          ],
-          sizeUnit: 'liter'
-        },
-        {
           id: 'racoil-gear-oil-ep-90-gl3',
           name: 'RACOIL GEAR OIL EP 90 GL-3',
           description: 'Reliable gear oil ensuring smooth operation, reduced noise, and extended gear life.',
@@ -476,16 +456,6 @@ export const automotiveOils: Category = {
           ],
           sizeUnit: 'liter'
         },
-        {
-          id: 'racoil-axle-oil',
-          name: 'RACOIL AXLE OIL',
-          description: 'Premium axle oil for heavy-duty applications, providing excellent protection and smooth operation.',
-          sizes: [
-            { size: '10', price: 0 },
-            { size: '20', price: 0 }
-          ],
-          sizeUnit: 'liter'
-        }
       ]
     }
   ]
@@ -507,7 +477,6 @@ export const industrialOils: Category = {
           name: 'RACOIL GEAR BOX OIL 150',
           description: 'Industrial gear oils formulated to handle heavy loads, reduce wear, and protect gears from rust and oxidation.',
           sizes: [
-            { size: '20', price: 0 },
             { size: '210', price: 127500, image: racoilIndustrial210L }
           ],
           sizeUnit: 'liter'
@@ -517,7 +486,6 @@ export const industrialOils: Category = {
           name: 'RACOIL GEAR BOX OIL 220',
           description: 'Industrial gear oils formulated to handle heavy loads, reduce wear, and protect gears from rust and oxidation.',
           sizes: [
-            { size: '20', price: 0 },
             { size: '210', price: 148500, image: racoilIndustrial210L }
           ],
           sizeUnit: 'liter'
@@ -527,7 +495,6 @@ export const industrialOils: Category = {
           name: 'RACOIL GEAR BOX OIL 320',
           description: 'Industrial gear oils formulated to handle heavy loads, reduce wear, and protect gears from rust and oxidation.',
           sizes: [
-            { size: '20', price: 0 },
             { size: '210', price: 138750, image: racoilIndustrial210L }
           ],
           sizeUnit: 'liter'
@@ -543,7 +510,6 @@ export const industrialOils: Category = {
           name: 'RACOIL HEAT TRANSFER OIL 32',
           description: 'High-quality heat transfer oils offering excellent thermal stability and efficient heat circulation in heating systems.',
           sizes: [
-            { size: '20', price: 0 },
             { size: '210', price: 196000, image: racoilIndustrial210L }
           ],
           sizeUnit: 'liter'
@@ -553,8 +519,6 @@ export const industrialOils: Category = {
           name: 'RACOIL HEAT TRANSFER OIL 46',
           description: 'High-quality heat transfer oils offering excellent thermal stability and efficient heat circulation in heating systems.',
           sizes: [
-            { size: '10', price: 0 },
-            { size: '20', price: 0 },
             { size: '210', price: 212625, image: racoilIndustrial210L }
           ],
           sizeUnit: 'liter'
@@ -620,8 +584,6 @@ export const industrialOils: Category = {
           name: 'RACOIL COMPRESSOR OIL ISO 100',
           description: 'High-quality compressor oils designed to reduce wear, prevent deposits, and ensure efficient compressor performance.',
           sizes: [
-            { size: '10', price: 0 },
-            { size: '20', price: 0 },
             { size: '210', price: 101250, image: racoilIndustrial210L }
           ],
           sizeUnit: 'liter'
@@ -631,8 +593,6 @@ export const industrialOils: Category = {
           name: 'RACOIL COMPRESSOR OIL 32',
           description: 'High-quality compressor oils designed to reduce wear, prevent deposits, and ensure efficient compressor performance.',
           sizes: [
-            { size: '10', price: 0 },
-            { size: '20', price: 0 },
             { size: '210', price: 79500, image: racoilIndustrial210L }
           ],
           sizeUnit: 'liter'
@@ -642,8 +602,6 @@ export const industrialOils: Category = {
           name: 'RACOIL COMPRESSOR OIL 46',
           description: 'High-quality compressor oils designed to reduce wear, prevent deposits, and ensure efficient compressor performance.',
           sizes: [
-            { size: '10', price: 0 },
-            { size: '20', price: 0 },
             { size: '210', price: 79500, image: racoilIndustrial210L }
           ],
           sizeUnit: 'liter'
@@ -653,8 +611,6 @@ export const industrialOils: Category = {
           name: 'RACOIL COMPRESSOR OIL 68',
           description: 'High-quality compressor oils designed to reduce wear, prevent deposits, and ensure efficient compressor performance.',
           sizes: [
-            { size: '10', price: 0 },
-            { size: '20', price: 0 },
             { size: '210', price: 79500, image: racoilIndustrial210L }
           ],
           sizeUnit: 'liter'
