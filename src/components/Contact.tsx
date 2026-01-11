@@ -37,8 +37,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-display text-xl tracking-wide text-foreground mb-2">Phone</h3>
-                  <a href="tel:+9779767612453" className="text-muted-foreground hover:text-primary transition-colors">
-                    +977-9767612453
+                  <a href="tel:+9779857076023" className="text-muted-foreground hover:text-primary transition-colors">
+                    +9779857076023
                   </a>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                   Chat on WhatsApp
                 </Button>
               </a>
-              <a href="tel:+9779767612453" className="flex-1">
+              <a href="tel:+9779857076023" className="flex-1">
                 <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground gap-2 h-12">
                   <Phone className="w-5 h-5" />
                   Call Us Now
