@@ -105,9 +105,9 @@ const ProductDetailModal = ({ product, isOpen, onClose }: ProductDetailModalProp
             {/* Description */}
             <div className="mb-4 sm:mb-6">
               <h3 className="text-xs sm:text-sm font-semibold text-muted-foreground uppercase tracking-wide mb-1 sm:mb-2">
-                Specification
+                Description
               </h3>
-              <p className="text-sm sm:text-base text-foreground/80 leading-relaxed line-clamp-3 sm:line-clamp-none">
+              <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
                 {product.description}
               </p>
             </div>

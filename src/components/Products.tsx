@@ -67,11 +67,11 @@ const Products = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Link to="/products">
+          <a href="/RACOIL-Catalogue.pdf" download="RACOIL-Catalogue.pdf">
             <Button size="lg" className="gap-2">
-              View All Products <ArrowRight className="w-5 h-5" />
+              Download Catalogue <ArrowRight className="w-5 h-5" />
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
