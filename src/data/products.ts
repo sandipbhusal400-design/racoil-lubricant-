@@ -67,9 +67,7 @@ import racoilTractor20w40Cf_10L from '@/assets/products/racoil-tractor-20w40-cf-
 import racoilGearEp140Gl3_1L from '@/assets/products/racoil-gear-ep140-gl3-1l.png';
 import racoilGearEp140Gl3_10L from '@/assets/products/racoil-gear-ep140-gl3-10l.png';
 import racoilGearEp140Gl3_20L from '@/assets/products/racoil-gear-ep140-gl3-20l.png';
-// RACOIL AXLE OIL
-import racoilAxleOil_10L from '@/assets/products/racoil-axle-oil-10l.png';
-import racoilAxleOil_20L from '@/assets/products/racoil-axle-oil-20l.png';
+// RACOIL AXLE OIL - removed
 // MP BROWN Grease
 import mpBrown_05Kg from '@/assets/products/mp-brown-0.5kg.png';
 import mpBrown_1Kg from '@/assets/products/mp-brown-1kg.png';
@@ -96,8 +94,8 @@ import mpWhiteGrease_18Kg from '@/assets/products/mp-white-grease-18kg.png';
 import mpWhiteGrease_180Kg from '@/assets/products/mp-white-grease-180kg.png';
 // RACOIL 4T 10W-40 SM/CF
 import racoil4t10w40SmCf_1L from '@/assets/products/racoil-4t-10w40-smcf-1l.png';
-// RACOIL SUPER 4T 20W-50 CF/SF
-import racoilSuper4t20w50CfSf_1L from '@/assets/products/racoil-super-4t-20w50-cfsf-1l.png';
+// RACOIL UPPER 4T 20W-40 CF/SF (renamed from SUPER)
+import racoilUpper4t20w40CfSf_1L from '@/assets/products/racoil-super-4t-20w50-cfsf-1l.png';
 // RACOIL GEAR OIL EP 90 GL-3
 import racoilGearEp90Gl3_1L from '@/assets/products/racoil-gear-ep90-gl3-1l.png';
 import racoilGearEp90Gl3_10L from '@/assets/products/racoil-gear-ep90-gl3-10l.png';
@@ -147,6 +145,7 @@ import racoilHydroSuper68_20L from '@/assets/products/racoil-hydro-super-68-20l.
 // RACOIL ATF II/TQ
 import racoilAtfIiTq_1L from '@/assets/products/racoil-atf-ii-tq-1l.png';
 import racoilAtfIiTq_20L from '@/assets/products/racoil-atf-ii-tq-20l.png';
+
 export interface ProductSize {
   size: string;
   price: number;
@@ -190,7 +189,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-5w30-sl-cf',
           name: 'RACOIL 5W-30 SL/CF',
-          description: 'High-performance multigrade engine oil providing excellent lubrication, engine cleanliness, and wear protection. Suitable for petrol and diesel engines, ensuring smooth performance and improved fuel efficiency.',
+          description: 'RACOIL 5W-30 SL/CF is high-performance multigrade engine oil developed for modern petrol and light-duty diesel engines. It provides excellent cold-start lubrication, ensuring quick oil circulation at low temperatures and strong protection during start-up. The advanced additive system helps control sludge, deposits, and oxidation, keeping the engine clean and efficient. Suitable for daily driving and extended drain intervals.',
           sizes: [
             { size: '1', price: 907, image: racoil5w30SlCf1L },
             { size: '3', price: 2685, image: racoil5w30SlCf3L },
@@ -201,7 +200,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-5w30-sm-cf',
           name: 'RACOIL 5W-30 SM/CF',
-          description: 'Advanced engine oil formulated for modern engines, offering superior protection against wear, sludge, and oxidation while delivering reliable performance in all driving conditions.',
+          description: 'This premium-grade engine oil is formulated to meet higher performance requirements of modern engines. It offers superior thermal stability and resistance to oil breakdown at high operating temperatures. RACOIL 5W-30 SM/CF helps reduce friction, engine noise, and emissions while maintaining engine cleanliness over long service intervals.',
           sizes: [
             { size: '1', price: 980, image: racoil5w30SmCf1L },
             { size: '3', price: 2920, image: racoil5w30SmCf3L },
@@ -212,7 +211,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-20w50-sl-cf',
           name: 'RACOIL 20W-50 SL/CF',
-          description: 'Heavy-duty multigrade engine oil designed to protect engines operating under high temperature and load conditions. Helps reduce oil consumption and extend engine life.',
+          description: 'RACOIL 20W-50 SL/CF is a robust engine oil specially designed for high-mileage and older engines operating under severe conditions. The thicker viscosity provides strong oil film strength at high temperatures, maintaining oil pressure and reducing oil consumption. Ideal for hot climates and heavy traffic conditions.',
           sizes: [
             { size: '1', price: 750, image: racoil20w50SlCf1L },
             { size: '3', price: 2190, image: racoil20w50SlCf3L }
@@ -222,7 +221,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-10w40-sm',
           name: 'RACOIL 10W-40 SM',
-          description: 'Premium multigrade engine oil offering excellent cold start performance, reduced engine wear, and smooth operation for petrol engines.',
+          description: 'RACOIL 10W-40 SM is a semi-synthetic engine oil designed for enhanced engine responsiveness and smooth operation. It offers improved protection during high-speed driving and stop-and-go traffic conditions. The formulation minimizes engine wear and improves overall performance.',
           sizes: [
             { size: '1', price: 1030, image: racoil10w40Sm1L },
             { size: '3', price: 3030, image: racoil10w40Sm3L },
@@ -233,7 +232,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-10w30-sl',
           name: 'RACOIL 10W-30 SL',
-          description: 'Fuel-efficient engine oil designed to provide effective lubrication, engine cleanliness, and reliable protection for modern petrol engines.',
+          description: 'A light-viscosity multigrade engine oil suitable for smooth and efficient engine operation. It ensures fast lubrication during cold starts and stable performance under normal driving conditions. Ideal for small cars and light vehicles.',
           sizes: [
             { size: '1', price: 810, image: racoil10w30Sl1L },
             { size: '3', price: 2390, image: racoil10w30Sl3L },
@@ -250,7 +249,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-platinum-15w40-ci4',
           name: 'RACOIL PLATINUM 15W-40 CI-4',
-          description: 'High-performance diesel engine oil formulated for heavy-duty engines. Provides excellent wear protection, soot control, and long engine life.',
+          description: 'A premium heavy-duty diesel engine oil formulated for turbocharged and naturally aspirated engines. It provides outstanding soot handling capability, minimizes engine wear, and ensures long engine life even under high load and extended operating conditions.',
           sizes: [
             { size: '1', price: 772, image: racoilPlatinum15w40Ci4_1L },
             { size: '6', price: 4412, image: racoilPlatinum15w40Ci4_6L },
@@ -265,7 +264,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-platinum-15w40-ci4-plus',
           name: 'RACOIL PLATINUM 15W-40 CI-4 PLUS',
-          description: 'Enhanced heavy-duty engine oil offering superior protection against deposits, oxidation, and wear in high-load diesel engines.',
+          description: 'An upgraded formulation offering superior thermal stability and engine cleanliness. Designed for severe-duty applications where engines operate continuously under high stress.',
           sizes: [
             { size: '1', price: 797, image: racoilPlatinum15w40Ci4Plus_1L },
             { size: '6', price: 4559, image: racoilPlatinum15w40Ci4Plus_6L },
@@ -280,7 +279,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-platinum-15w40-ch4',
           name: 'RACOIL PLATINUM 15W-40 CH-4',
-          description: 'Reliable diesel engine oil designed for commercial vehicles, ensuring engine cleanliness and dependable performance under severe conditions.',
+          description: 'Reliable diesel engine oil developed for commercial vehicles and off-highway equipment. It ensures consistent lubrication and engine protection under heavy load and dusty environments.',
           sizes: [
             { size: '1', price: 755, image: racoilPlatinum15w40Ch4_1L },
             { size: '6', price: 4309, image: racoilPlatinum15w40Ch4_6L },
@@ -296,7 +295,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-platinum-15w40-cf4',
           name: 'RACOIL PLATINUM 15W-40 CF-4',
-          description: 'Quality engine oil suitable for older diesel engines, providing effective lubrication, corrosion protection, and stable engine operation.',
+          description: 'Provides dependable protection for older diesel engines, preventing wear and deposit formation while maintaining engine efficiency.',
           sizes: [
             { size: '1', price: 718, image: racoilPlatinum15w40Cf4_1L },
             { size: '6', price: 4265, image: racoilPlatinum15w40Cf4_6L },
@@ -318,7 +317,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-4t-20w50-sl-cf',
           name: 'RACOIL 4T 20W-50 SL/CF',
-          description: 'Specially formulated 4-stroke motorcycle oil ensuring smooth clutch performance, strong engine protection, and high thermal stability.',
+          description: 'Specially developed for four-stroke motorcycles, this oil ensures smooth clutch engagement, reduced engine vibration, and long engine life even during long rides.',
           sizes: [
             { size: '1', price: 723, image: racoil4t20w50SlCf_1L },
             { size: '1.2', price: 868, image: racoil4t20w50SlCf_12L }
@@ -328,7 +327,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-4t-10w30-sl-cf',
           name: 'RACOIL 4T 10W-30 SL/CF',
-          description: 'Motorcycle engine oil providing excellent lubrication, improved fuel economy, and reliable performance in daily riding conditions.',
+          description: 'Designed for modern motorcycles requiring lighter viscosity oil for better acceleration and fuel efficiency.',
           sizes: [
             { size: '0.8', price: 559, image: racoil4t10w30SlCf_08L },
             { size: '1', price: 699, image: racoil4t10w30SlCf_1L }
@@ -338,18 +337,18 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-4t-10w40-sm-cf',
           name: 'RACOIL 4T 10W-40 SM/CF',
-          description: 'Premium motorcycle oil offering superior engine cleanliness, reduced wear, and smooth acceleration.',
+          description: 'Advanced motorcycle oil offering superior high-temperature protection, smooth gear shifting, and engine cleanliness.',
           sizes: [
             { size: '1', price: 980, image: racoil4t10w40SmCf_1L }
           ],
           sizeUnit: 'liter'
         },
         {
-          id: 'racoil-super-4t-20w50-cf-sf',
-          name: 'RACOIL SUPER 4T 20W-50 CF/SF',
-          description: 'Motorcycle oil designed for high-temperature operation, ensuring long engine life and consistent performance.',
+          id: 'racoil-upper-4t-20w40-cf-sf',
+          name: 'RACOIL UPPER 4T 20W-40 CF/SF',
+          description: 'Heavy-duty motorcycle oil ideal for high-load riding conditions and long-distance travel.',
           sizes: [
-            { size: '1', price: 516, image: racoilSuper4t20w50CfSf_1L }
+            { size: '1', price: 516, image: racoilUpper4t20w40CfSf_1L }
           ],
           sizeUnit: 'liter'
         }
@@ -362,7 +361,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-tractor-engine-oil-20w40-cf',
           name: 'RACOIL TRACTOR ENGINE OIL 20W-40 CF',
-          description: 'Specially designed for tractors and agricultural engines, providing reliable lubrication, engine protection, and durability during long working hours.',
+          description: 'Specially formulated for agricultural engines operating in dusty, high-load environments. Ensures long engine life and reliable performance.',
           sizes: [
             { size: '1', price: 718, image: racoilTractor20w40Cf_1L },
             { size: '3', price: 2205, image: racoilTractor20w40Cf_3L },
@@ -374,7 +373,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-utto-10w30',
           name: 'RACOIL UTTO 10W-30',
-          description: 'Universal Tractor Transmission Oil suitable for transmissions, hydraulics, and wet brakes, ensuring smooth operation and equipment protection.',
+          description: 'Universal Tractor Transmission Oil suitable for transmission, hydraulic systems, final drives, and wet brakes. Reduces brake noise and ensures smooth operation.',
           sizes: [
             { size: '1', price: 779, image: racoilUtto10w30_1L },
             { size: '10', price: 7304, image: racoilUtto10w30_10L },
@@ -391,7 +390,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-gear-oil-ep-140-gl3',
           name: 'RACOIL GEAR OIL EP 140 GL-3',
-          description: 'Heavy-duty gear oil providing excellent load-carrying capacity and protection against wear in gear systems.',
+          description: 'Formulated for manual gearboxes and steering gears, providing excellent load-carrying capacity and wear protection.',
           sizes: [
             { size: '1', price: 490, image: racoilGearEp140Gl3_1L },
             { size: '10', price: 4800, image: racoilGearEp140Gl3_10L },
@@ -402,7 +401,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-gear-oil-ep-90-gl3',
           name: 'RACOIL GEAR OIL EP 90 GL-3',
-          description: 'Reliable gear oil ensuring smooth operation, reduced noise, and extended gear life.',
+          description: 'Formulated for manual gearboxes and steering gears, providing excellent load-carrying capacity and wear protection.',
           sizes: [
             { size: '1', price: 490, image: racoilGearEp90Gl3_1L },
             { size: '10', price: 4800, image: racoilGearEp90Gl3_10L },
@@ -413,7 +412,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-transmission-gear-oil-85w140-gl4',
           name: 'RACOIL TRANSMISSION/GEAR OIL 85W-140 GL4',
-          description: 'High-viscosity gear oil designed for heavy-load transmissions and differentials.',
+          description: 'Designed for hypoid gears and heavy-duty transmissions, offering extreme pressure protection, shock load resistance, and longer gear life.',
           sizes: [
             { size: '1', price: 760, image: racoilGear85w140Gl4_1L },
             { size: '8', price: 5784, image: racoilGear85w140Gl4_8L },
@@ -425,7 +424,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-transmission-gear-oil-85w140-gl5',
           name: 'RACOIL TRANSMISSION/GEAR OIL 85W-140 GL5',
-          description: 'Extreme-pressure gear oil offering superior protection under severe operating conditions.',
+          description: 'Designed for hypoid gears and heavy-duty transmissions, offering extreme pressure protection, shock load resistance, and longer gear life.',
           sizes: [
             { size: '1', price: 760, image: racoilGear85w140Gl5_1L },
             { size: '8', price: 5784, image: racoilGear85w140Gl5_8L },
@@ -437,7 +436,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-transmission-gear-oil-80w90-gl4',
           name: 'RACOIL TRANSMISSION/GEAR OIL 80W-90 GL-4',
-          description: 'Quality transmission oil providing smooth gear shifting and wear protection.',
+          description: 'Designed for hypoid gears and heavy-duty transmissions, offering extreme pressure protection, shock load resistance, and longer gear life.',
           sizes: [
             { size: '1', price: 711, image: racoilGear80w90Gl4_1L },
             { size: '10', price: 6620, image: racoilGear80w90Gl4_10L },
@@ -448,7 +447,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-transmission-gear-oil-80w90-gl5',
           name: 'RACOIL TRANSMISSION/GEAR OIL 80W-90 GL-5',
-          description: 'High-performance gear oil designed for heavy-duty automotive applications.',
+          description: 'Designed for hypoid gears and heavy-duty transmissions, offering extreme pressure protection, shock load resistance, and longer gear life.',
           sizes: [
             { size: '1', price: 735, image: racoilGear80w90Gl5_1L },
             { size: '8', price: 5592, image: racoilGear80w90Gl5_8L },
@@ -460,7 +459,7 @@ export const automotiveOils: Category = {
         {
           id: 'racoil-atf-ii-tq',
           name: 'RACOIL ATF II/TQ',
-          description: 'Automatic Transmission Fluid providing smooth gear shifting, oxidation resistance, and transmission protection.',
+          description: 'High-quality automatic transmission fluid ensuring smooth gear shifting, seal protection, and long service life.',
           sizes: [
             { size: '1', price: 650, image: racoilAtfIiTq_1L },
             { size: '20', price: 12090, image: racoilAtfIiTq_20L }
@@ -486,7 +485,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-gear-box-oil-150',
           name: 'RACOIL GEAR BOX OIL 150',
-          description: 'Industrial gear oils formulated to handle heavy loads, reduce wear, and protect gears from rust and oxidation.',
+          description: 'High-performance industrial gear oils designed to withstand heavy loads, shock, and high temperatures in industrial gear systems.',
           sizes: [
             { size: '210', price: 127500, image: racoilIndustrial210L }
           ],
@@ -495,7 +494,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-gear-box-oil-220',
           name: 'RACOIL GEAR BOX OIL 220',
-          description: 'Industrial gear oils formulated to handle heavy loads, reduce wear, and protect gears from rust and oxidation.',
+          description: 'High-performance industrial gear oils designed to withstand heavy loads, shock, and high temperatures in industrial gear systems.',
           sizes: [
             { size: '210', price: 148500, image: racoilIndustrial210L }
           ],
@@ -504,7 +503,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-gear-box-oil-320',
           name: 'RACOIL GEAR BOX OIL 320',
-          description: 'Industrial gear oils formulated to handle heavy loads, reduce wear, and protect gears from rust and oxidation.',
+          description: 'High-performance industrial gear oils designed to withstand heavy loads, shock, and high temperatures in industrial gear systems.',
           sizes: [
             { size: '210', price: 138750, image: racoilIndustrial210L }
           ],
@@ -519,7 +518,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-heat-transfer-oil-32',
           name: 'RACOIL HEAT TRANSFER OIL 32',
-          description: 'High-quality heat transfer oils offering excellent thermal stability and efficient heat circulation in heating systems.',
+          description: 'Provide efficient heat transfer with excellent thermal stability and low carbon formation.',
           sizes: [
             { size: '210', price: 196000, image: racoilIndustrial210L }
           ],
@@ -528,7 +527,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-heat-transfer-oil-46',
           name: 'RACOIL HEAT TRANSFER OIL 46',
-          description: 'High-quality heat transfer oils offering excellent thermal stability and efficient heat circulation in heating systems.',
+          description: 'Provide efficient heat transfer with excellent thermal stability and low carbon formation.',
           sizes: [
             { size: '210', price: 212625, image: racoilIndustrial210L }
           ],
@@ -543,7 +542,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-hydro-aw-46',
           name: 'RACOIL HYDRO AW 46',
-          description: 'Anti-wear hydraulic oil providing smooth power transmission and equipment protection.',
+          description: 'Anti-wear hydraulic oils ensuring smooth system operation, reduced pump wear, and long equipment life.',
           sizes: [
             { size: '10', price: 5784, image: racoilHydroAw46_10L },
             { size: '20', price: 11078, image: racoilHydroAw46_20L },
@@ -554,7 +553,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-hydro-aw-68',
           name: 'RACOIL HYDRO AW 68',
-          description: 'Premium hydraulic oil suitable for high-pressure hydraulic systems.',
+          description: 'Anti-wear hydraulic oils ensuring smooth system operation, reduced pump wear, and long equipment life.',
           sizes: [
             { size: '10', price: 5784, image: racoilHydroAw68_10L },
             { size: '20', price: 11078, image: racoilHydroAw68_20L },
@@ -565,7 +564,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-hydro-super-68',
           name: 'RACOIL HYDRO SUPER 68',
-          description: 'Enhanced hydraulic oil offering improved oxidation resistance and long service life.',
+          description: 'Anti-wear hydraulic oils ensuring smooth system operation, reduced pump wear, and long equipment life.',
           sizes: [
             { size: '10', price: 4412, image: racoilHydroSuper68_10L },
             { size: '20', price: 8333, image: racoilHydroSuper68_20L },
@@ -593,7 +592,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-compressor-oil-iso-100',
           name: 'RACOIL COMPRESSOR OIL ISO 100',
-          description: 'High-quality compressor oils designed to reduce wear, prevent deposits, and ensure efficient compressor performance.',
+          description: 'Designed to minimize carbon deposits, reduce wear, and ensure efficient compressor performance.',
           sizes: [
             { size: '210', price: 101250, image: racoilIndustrial210L }
           ],
@@ -602,7 +601,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-compressor-oil-32',
           name: 'RACOIL COMPRESSOR OIL 32',
-          description: 'High-quality compressor oils designed to reduce wear, prevent deposits, and ensure efficient compressor performance.',
+          description: 'Designed to minimize carbon deposits, reduce wear, and ensure efficient compressor performance.',
           sizes: [
             { size: '210', price: 79500, image: racoilIndustrial210L }
           ],
@@ -611,7 +610,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-compressor-oil-46',
           name: 'RACOIL COMPRESSOR OIL 46',
-          description: 'High-quality compressor oils designed to reduce wear, prevent deposits, and ensure efficient compressor performance.',
+          description: 'Designed to minimize carbon deposits, reduce wear, and ensure efficient compressor performance.',
           sizes: [
             { size: '210', price: 79500, image: racoilIndustrial210L }
           ],
@@ -620,7 +619,7 @@ export const industrialOils: Category = {
         {
           id: 'racoil-compressor-oil-68',
           name: 'RACOIL COMPRESSOR OIL 68',
-          description: 'High-quality compressor oils designed to reduce wear, prevent deposits, and ensure efficient compressor performance.',
+          description: 'Designed to minimize carbon deposits, reduce wear, and ensure efficient compressor performance.',
           sizes: [
             { size: '210', price: 79500, image: racoilIndustrial210L }
           ],
@@ -640,8 +639,8 @@ export const greases: Category = {
   products: [
     {
       id: 'mp-brown',
-      name: 'MP BROWN',
-      description: 'General-purpose grease offering good lubrication and protection.',
+      name: 'MP Brown Grease',
+      description: 'Multipurpose grease suitable for bearings, chassis, and industrial applications.',
       sizes: [
         { size: '0.5', price: 313, image: mpBrown_05Kg },
         { size: '1', price: 551, image: mpBrown_1Kg },
@@ -667,7 +666,7 @@ export const greases: Category = {
     {
       id: 'ht-blue-grease',
       name: 'HT Blue Grease',
-      description: 'High-temperature grease suitable for demanding applications.',
+      description: 'High-temperature grease with excellent water resistance and strong adhesion.',
       sizes: [
         { size: '0.5', price: 745, image: htBlueGrease_05Kg },
         { size: '1', price: 1470, image: htBlueGrease_1Kg },
@@ -693,7 +692,7 @@ export const greases: Category = {
     {
       id: 'mp-white-grease',
       name: 'MP White Grease',
-      description: 'Water-resistant grease suitable for automotive and industrial use.',
+      description: 'Clean, multipurpose grease ideal for light-duty and visible applications.',
       sizes: [
         { size: '0.5', price: 331, image: mpWhiteGrease_05Kg },
         { size: '1', price: 588, image: mpWhiteGrease_1Kg },
@@ -716,7 +715,7 @@ export const coolants: Category = {
     {
       id: 'coolant-ready-green',
       name: 'Coolant Ready Green',
-      description: 'Ready-to-use engine coolants providing excellent protection against overheating, corrosion, and rust.',
+      description: 'Ready-to-use coolants providing effective cooling, rust protection, and long engine life.',
       sizes: [
         { size: '1', price: 172, image: coolantReadyGreen_1L }
       ],
@@ -725,7 +724,7 @@ export const coolants: Category = {
     {
       id: 'coolant-ready-red',
       name: 'Coolant Ready Red',
-      description: 'Ready-to-use engine coolants providing excellent protection against overheating, corrosion, and rust.',
+      description: 'Ready-to-use coolants providing effective cooling, rust protection, and long engine life.',
       sizes: [
         { size: '1', price: 380, image: coolantReadyRed_1L }
       ],
@@ -734,7 +733,7 @@ export const coolants: Category = {
     {
       id: 'coolant-green-1-4',
       name: 'Coolant Green 1:4',
-      description: 'High-quality coolant concentrate ensuring effective engine cooling and long radiator life.',
+      description: 'Concentrated coolant requiring dilution, suitable for all radiator systems.',
       sizes: [
         { size: '1', price: 299, image: coolantGreen14_1L }
       ],

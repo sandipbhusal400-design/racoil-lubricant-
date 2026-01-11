@@ -3,7 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import logoDesktop from '@/assets/logo-desktop.png';
-import logoMobile from '@/assets/logo-mobile.png';
+import logoMobile from '@/assets/logo-mobile-new.svg';
+import isoCertified from '@/assets/iso-certified.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -94,26 +95,39 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* WhatsApp Button */}
-          <a
-            href="https://wa.me/9779857076023"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:flex"
-          >
-            <Button className="bg-[#25D366] hover:bg-[#128C7E] text-white gap-2">
-              <MessageCircle className="w-4 h-4" />
-              WhatsApp
-            </Button>
-          </a>
+          {/* WhatsApp Button & ISO Badge */}
+          <div className="hidden md:flex items-center gap-4">
+            <a
+              href="https://wa.me/9779857076023"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-[#25D366] hover:bg-[#128C7E] text-white gap-2">
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp
+              </Button>
+            </a>
+            <img 
+              src={isoCertified} 
+              alt="ISO Certified Company" 
+              className="h-10"
+            />
+          </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-foreground"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* ISO Badge & Mobile Menu Button */}
+          <div className="md:hidden flex items-center gap-2">
+            <img 
+              src={isoCertified} 
+              alt="ISO Certified" 
+              className="h-8"
+            />
+            <button
+              className="p-2 text-foreground"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

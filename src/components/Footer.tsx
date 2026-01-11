@@ -10,9 +10,14 @@ const Footer = () => {
             <span className="text-xs text-muted-foreground">Lubricants & Grease</span>
           </div>
           
-          <p className="text-muted-foreground text-sm text-center">
-            © {new Date().getFullYear()} Global Lubricants Industries Pvt. Ltd. All rights reserved.
-          </p>
+          <a 
+            href="https://globallubericants.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-muted-foreground text-sm text-center hover:text-primary transition-colors"
+          >
+            By Global Lubricants Industries Pvt. Ltd
+          </a>
         </div>
       </div>
     </footer>
