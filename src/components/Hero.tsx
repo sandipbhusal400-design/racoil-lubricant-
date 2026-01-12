@@ -5,6 +5,7 @@ import heroSlide1 from '@/assets/hero-slide-1.jpg';
 import heroSlide2 from '@/assets/hero-slide-2.jpg';
 import heroSlide3 from '@/assets/hero-slide-3.jpg';
 import heroSlide4 from '@/assets/hero-slide-4.jpg';
+import heroMobilePromo from '@/assets/hero-mobile-promo.svg';
 
 const slides = [heroSlide1, heroSlide2, heroSlide3, heroSlide4];
 
@@ -23,11 +24,21 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image Slider */}
+      {/* Mobile Hero Image */}
+      <div className="absolute inset-0 md:hidden">
+        <img 
+          src={heroMobilePromo} 
+          alt="RACOIL Motor Oil Promotion" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+      </div>
+
+      {/* Desktop Background Image Slider */}
       {slides.map((slide, index) => (
         <div
           key={index}
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 hidden md:block"
           style={{
             backgroundImage: `url(${slide})`,
             opacity: currentSlide === index ? 1 : 0,
