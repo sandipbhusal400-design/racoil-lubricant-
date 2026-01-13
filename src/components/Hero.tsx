@@ -1,22 +1,31 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useIsMobile } from '@/hooks/use-mobile';
 import heroSlide1 from '@/assets/hero-slide-1.jpg';
 import heroSlide2 from '@/assets/hero-slide-2.jpg';
 import heroSlide3 from '@/assets/hero-slide-3.jpg';
 import heroSlide4 from '@/assets/hero-slide-4.jpg';
+import heroMobile1 from '@/assets/hero-mobile-1.jpg';
+import heroMobile2 from '@/assets/hero-mobile-2.jpg';
+import heroMobile3 from '@/assets/hero-mobile-3.jpg';
+import heroMobile4 from '@/assets/hero-mobile-4.jpg';
 
-const slides = [heroSlide1, heroSlide2, heroSlide3, heroSlide4];
+const desktopSlides = [heroSlide1, heroSlide2, heroSlide3, heroSlide4];
+const mobileSlides = [heroMobile1, heroMobile2, heroMobile3, heroMobile4];
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const isMobile = useIsMobile();
+  
+  const slides = isMobile ? mobileSlides : desktopSlides;
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   return (
     <section
